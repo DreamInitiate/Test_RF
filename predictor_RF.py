@@ -100,7 +100,7 @@ if st.button("Predict"):
     # 如果预测类别为 0（低风险）
     else:
         advice = (
-            f"According to our model, you have a low risk of favorable prognosis. "
+            f"According to our model, you have a low risk of poor prognosis. "
             f"The model predicts that your probability of having a favorable outcome within 90 days is {probability:.1f}%. "
             "However, maintaining a healthy lifestyle is important. Please continue regular check-ups with your healthcare provider."
         )
