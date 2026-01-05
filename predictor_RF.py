@@ -44,7 +44,7 @@ st.title("90天预后预测工具")  # 设置网页标题
 Age = st.number_input("年龄:", min_value=0, max_value=120, value=0)  
 
 # 脑水肿（CE）：分类选择框（0：否，1：是）
-CE = st.selectbox("脑水肿:", options=[0, 1], format_func=lambda x: "否" if x == 1 else "是")  
+CE = st.selectbox("脑水肿:", options=[0, 1], format_func=lambda x: "是" if x == 1 else "否")  
 
 # 出血转化（HT）：分类选择框（0：否，1：HT，2：sICH）
 HT = st.selectbox(
@@ -58,13 +58,13 @@ HT = st.selectbox(
 )
 
 # 卒中相关性肺炎（SAP）：分类选择框（0：否，1：是）
-SAP = st.selectbox("卒中相关性肺炎:", options=[0, 1], format_func=lambda x: "否" if x == 1 else "是")  
+SAP = st.selectbox("卒中相关性肺炎:", options=[0, 1], format_func=lambda x: "是" if x == 1 else "否")  
 
 # 早期神经功能恶化（END）：分类选择框（0：否，1：是）
-END = st.selectbox("早期神经功能恶化:", options=[0, 1], format_func=lambda x: "否" if x == 1 else "是")  
+END = st.selectbox("早期神经功能恶化:", options=[0, 1], format_func=lambda x: "是" if x == 1 else "否")  
 
 # 是否吸烟（Current_Smoking）：分类选择框（0：否，1：是）
-Current_Smoking = st.selectbox("是否吸烟:", options=[0, 1], format_func=lambda x: "否" if x == 1 else "是")  
+Current_Smoking = st.selectbox("是否吸烟:", options=[0, 1], format_func=lambda x: "是" if x == 1 else "否")  
 
 # 基线NIHSS评分（NIHSS0）：数值输入框
 NIHSS0 = st.number_input("基线NIHSS评分:", min_value=0, max_value=42, value=0)  
