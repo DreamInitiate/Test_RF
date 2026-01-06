@@ -41,7 +41,7 @@ feature_names = [
 st.title("AIS patient 90-day prognosis prediction tool:")  # 设置网页标题
 
 # 年龄（Age）：数值输入框
-Age = st.number_input("Age:", min_value=0, max_value=120, value=0)  
+Age = st.number_input("Age:", min_value=0, max_value=120, value=60)  
 
 # 脑水肿（CE）：分类选择框（0：否，1：是）
 CE = st.selectbox("Cerebral edema:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "No")  
@@ -67,10 +67,10 @@ END = st.selectbox("Early neurological deterioration:", options=[0, 1], format_f
 Current_Smoking = st.selectbox("Current Smoking:", options=[0, 1], format_func=lambda x: "Yes" if x == 1 else "No")  
 
 # 基线NIHSS评分（NIHSS0）：数值输入框
-NIHSS0 = st.number_input("Baseline NIHSS score:", min_value=0, max_value=42, value=0)  
+NIHSS0 = st.number_input("Baseline NIHSS score:", min_value=0, max_value=42, value=10)  
 
 # 手术时长（Operation_time）：数值输入框
-Operation_time = st.number_input("Duration of the surgery:", min_value=0, max_value=1000, value=0) 
+Operation_time = st.number_input("Duration of the surgery:", min_value=0, max_value=1000, value=60) 
  
 
 # 处理输入数据并进行预测
